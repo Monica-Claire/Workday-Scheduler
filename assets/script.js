@@ -3,28 +3,19 @@ const d = new Date();
 document.getElementById("currentDay").innerHTML = d;
 
 //editable time blocks for tasks
-//code from 5.1.7
 
-//Add task here was clicked
-$(".taskarea").on("click", "span", function(){
-    console.log("was clicked")
-    //.textarea not connecting - how do we get it to connect?
-   
-    //get current text
-    var task = $(this)
-    .text()
-    .trim();
-    //need to create a variable for the task area - how?
+//event listener for click
+document.getElementById("hour9").addEventListener("keypress", console.log("press"));
+//convert to a variable to be able to store it?
 
-    //create new input element
-    var taskInput = $("<input>")
-    .attr("type", "text")
-    .addClass("form-control")
-    .val(task);
+//save when click save
+//add event listener to catch button click
+document.getElementById("save").addEventListener("click", console.log("save"));
 
-    //swap out elements
-    $(this).replaceWith(taskInput);
+//save to local storage when press save button
+localStorage.setItem();
 
-    //automatically focus on new element
-    taskInput.trigger("focus");
-});
+//pull from local storage on refresh
+const tasks = localStorage.getItem();
+
+//add color coding based on time
