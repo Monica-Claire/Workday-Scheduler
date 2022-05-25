@@ -29,42 +29,59 @@
      <!--display current day / time-->
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container">
+    <div class="row">
       <!-- Timeblocks go here -->
-      <h2 class="time-block">Day Scheduler</h2>
-      <ul class="time-block">
-        <li class="time-block, row, hour">9:00 a.m.</li>
-          <textarea class="textarea">Add Task here</textarea>
-          <button class="saveBTN">Save</button>
-        <li class="row, hour">10:00 a.m.</li>
-          <textarea class="textarea">Add Task here</textarea>
-          <button class="saveBTN">Save</button>
-        <li class="row, hour">11:00 a.m.</li>
-          <textarea class="textarea">Add Task here</textarea>
-          <button class="saveBTN">Save</button>
-        <li class="row, hour">12:00 a.m.</li>
-          <textarea class="textarea">Add Task here</textarea>
-          <button class="saveBTN">Save</button>
-        <li class="row, hour">1:00 a.m.</li>
-          <textarea class="textarea">Add Task here</textarea>
-          <button class="saveBTN">Save</button>
-        <li class="row, hour">2:00 a.m.</li>
-          <textarea class="textarea">Add Task here</textarea>
-          <button class="saveBTN">Save</button>
-        <li class="row, hour">3:00 a.m.</li>
-          <textarea class="textarea">Add Task here</textarea>
-          <button class="saveBTN">Save</button>
-        <li class="row, hour">4:00 a.m.</li>
-          <textarea class="textarea">Add Task here</textarea>
-          <button class="saveBTN">Save</button>
-        <li class="row, hour">5:00 a.m.</li>
-          <textarea class="textarea">Add Task here</textarea>
-          <button class="saveBTN">Save</button>
-      </ul>
+      <h2 class="row">Day Scheduler</h2>
+      <div class="row time-block">
+        <div class="hour time-block" id="9">
+          <h2 class="hour" >9:00 a.m.</h2>
+          <textarea class="textarea" placeholder="add tasks here"></textarea>
+          <button class="saveBtn">Save</button>
+        </div>
+        <div class="hour time-block" id="10">
+          <h2 class="hour">10:00 a.m.</h2>
+          <textarea class="textarea" placeholder="add tasks here"></textarea>
+          <button class="saveBtn">Save</button>
+        </div>
+        <div class="hour time-block" id="11">
+          <h2 class="hour">11:00 a.m.</h2>
+          <textarea class="textarea" placeholder="add tasks here"></textarea>
+          <button class="saveBtn">Save</button>
+        </div>
+        <div class="hour time-block" id="12">
+          <h2 class="hour">12:00 a.m.</h2>
+          <textarea class="textarea" placeholder="add tasks here"></textarea>
+          <button class="saveBtn">Save</button>
+        </div>
+        <div class="hour time-block" id="13">
+          <h2 class="hour">1:00 p.m.</h2>
+          <textarea class="textarea" placeholder="add tasks here"></textarea>
+          <button class="saveBtn">Save</button>
+        </div>
+        <div class="hour time-block" id="14">
+          <h2 class="hour">2:00 p.m.</h2>
+          <textarea class="textarea" placeholder="add tasks here"></textarea>
+          <button class="saveBtn">Save</button>
+        </div>
+        <div class="hour time-block" id="15">
+          <h2 class="hour">3:00 p.m.</h2>
+          <textarea class="textarea" placeholder="add tasks here"></textarea>
+          <button class="saveBtn">Save</button>
+        </div>
+        <div class="hour time-block" id="16">
+          <h2 class="hour">4:00 p.m.</h2>
+          <textarea class="textarea" placeholder="add tasks here"></textarea>
+          <button class="saveBtn">Save</button>
+        </div>
+        <div class="hour time-block" id="17">
+          <h2 class="hour">5:00 p.m.</h2>
+          <textarea class="textarea" placeholder="add tasks here"></textarea>
+          <button class="saveBtn">Save</button>
+        </div>
+      </div>
     </div>
-
-    <script src="./assets/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
