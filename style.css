@@ -30,6 +30,7 @@ body {
   text-align: center;
   border-radius: 15px;
   border: 2px black;
+  margin: 2px;
 }
 
 .row {
@@ -37,6 +38,8 @@ body {
   height: 80px;
   border-top: 1px solid white;;
   border: 2px black;
+  align: center;
+  margin: 2px;
 }
 
 .hour {
